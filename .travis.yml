@@ -16,7 +16,7 @@ only:
   - test-ci
   
 script:
-  - docker login
+  - docker login -u fellipeveiga -p teste1234
   - docker pull fellipeveiga/cucumber-bdd-ci
   - docker run -v $PWD/:/app/report/ fellipeveiga/cucumber-bdd-ci
 
